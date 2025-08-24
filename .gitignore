@@ -1,0 +1,12 @@
+# Ignore compiled files
+*.exe
+*.out
+*.obj
+*.o
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore OS files
+Thumbs.db
+.DS_Store
