@@ -1,35 +1,32 @@
-#include <iostream>
+#include<iostream>
 #include <vector>
 using namespace std;
-
-class stack {
-    vector<int> v;   
-public:
-    void push(int val) {
-        v.push_back(val);   
+class Stack{
+    vector <int> v;
+    public:
+    void push(int val){
+        v.push_back(val);
     }
-    void pop() {
+    void pop(){
         v.pop_back();
     }
-    int top() {
-        return v[v.size() - 1];   
+    int top(){
+        return v [v.size()-1];
     }
-    bool empty() {
+    bool empty(){
         return v.size() == 0;
     }
+
 };
-
-int main() {
-    stack s;
-    s.push(10);
-    s.push(20);
-    s.push(30);
-
-    while (!s.empty()) {   // fixed parenthesis
-        cout << s.top() << " ";
+int main(){
+    Stack s;
+    s.push(12);
+    s.push(40);
+    s.push(78);
+    while(!s.empty()){
+        cout<<s.top()<<" ";
         s.pop();
     }
-
-    cout << endl;
+cout<<endl;
     return 0;
-}
+};
